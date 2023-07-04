@@ -41,7 +41,7 @@ on:
       CPU_SELECTION:
         description: 'CPU优选,增加编译速度'
         required: true
-        default: '8370C'
+        default: '默认'
         type: choice
         options:
           - '默认'
@@ -103,7 +103,7 @@ env:
   PUSH_PLUS_TOKEN: ${{ secrets.PUSH_PLUS_TOKEN }}
   TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
   TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-  TZ: UTC
+  TZ: Asia/Shanghai
 
 jobs:
   build:

@@ -1,6 +1,0 @@
-
-version: "1"
-rules:
-  - base: main
-    upstream: 281677160:main
-    mergeMethod: merge
