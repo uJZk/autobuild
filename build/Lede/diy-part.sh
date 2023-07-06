@@ -60,7 +60,7 @@ export Disable_autosamba="1"                 # 去掉源码默认自选的luci-a
 
 # 其他
 export Ttyd_account_free_login="1"           # 设置ttyd免密登录(1为启用命令,填0为不作修改)
-export Delete_unnecessary_items="1"          # 个别机型内一堆其他机型固件,删除其他机型的,只保留当前主机型固件(1为启用命令,填0为不作修改)
+export Delete_unnecessary_items="0"          # 个别机型内一堆其他机型固件,删除其他机型的,只保留当前主机型固件(1为启用命令,填0为不作修改)
 export Disable_53_redirection="1"            # 删除DNS强制重定向53端口防火墙规则(个别源码本身不带此功能)(1为启用命令,填0为不作修改)
 export Cancel_running="1"                    # 取消路由器每天跑分任务(个别源码本身不带此功能)(1为启用命令,填0为不作修改)
 
@@ -91,6 +91,9 @@ export kernel_usage="stable"
 # 整理固件包时候,删除您不想要的固件或者文件,让它不需要上传到Actions空间(根据编译机型变化,自行调整删除名称)
 # openwrt-x86-64-generic-squashfs-rootfs.img.gz
 cat >"$CLEAR_PATH" <<-EOF
+openwrt-x86-64-generic-rootfs.tar.gz
+openwrt-x86-64-generic-kernel.bin
+packages
 ipk.tar.gz
 packages
 config.buildinfo
