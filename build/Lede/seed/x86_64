@@ -175,6 +175,7 @@ CONFIG_PACKAGE_kmod-nft-offload=y
 CONFIG_PACKAGE_kmod-nft-queue=y
 CONFIG_PACKAGE_kmod-nft-tproxy=y
 # CONFIG_PACKAGE_kmod-pcnet32 is not set
+# CONFIG_PACKAGE_kmod-phy-realtek is not set
 # CONFIG_PACKAGE_kmod-pps is not set
 # CONFIG_PACKAGE_kmod-ptp is not set
 # CONFIG_PACKAGE_kmod-r8125 is not set
