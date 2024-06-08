@@ -1,6 +1,7 @@
 CONFIG_TARGET_x86=y
 CONFIG_TARGET_x86_64=y
 CONFIG_TARGET_x86_64_DEVICE_generic=y
+CONFIG_BUILD_PATENTED=y
 CONFIG_DOCKER_OPTIONAL_FEATURES=y
 CONFIG_GRUB_IMAGES=y
 CONFIG_KERNEL_CFQ_GROUP_IOSCHED=y
@@ -27,11 +28,13 @@ CONFIG_PACKAGE_coreutils-nohup=y
 # CONFIG_PACKAGE_dns2socks is not set
 # CONFIG_PACKAGE_dns2tcp is not set
 CONFIG_PACKAGE_etherwake=y
+CONFIG_PACKAGE_firewall4=y
 CONFIG_PACKAGE_ip6tables=y
 CONFIG_PACKAGE_iptables-mod-conntrack-extra=y
 CONFIG_PACKAGE_iptables-mod-filter=y
 CONFIG_PACKAGE_iptables-mod-ipopt=y
 CONFIG_PACKAGE_ipv6helper=y
+CONFIG_PACKAGE_jansson=y
 CONFIG_PACKAGE_kmod-crypto-acompress=y
 CONFIG_PACKAGE_kmod-ifb=y
 CONFIG_PACKAGE_kmod-inet-diag=y
@@ -51,6 +54,10 @@ CONFIG_PACKAGE_kmod-nf-ipt6=y
 CONFIG_PACKAGE_kmod-nf-log6=y
 CONFIG_PACKAGE_kmod-nf-nat6=y
 CONFIG_PACKAGE_kmod-nf-reject6=y
+CONFIG_PACKAGE_kmod-nft-core=y
+CONFIG_PACKAGE_kmod-nft-fib=y
+CONFIG_PACKAGE_kmod-nft-nat=y
+CONFIG_PACKAGE_kmod-nft-offload=y
 CONFIG_PACKAGE_kmod-sched-cake=y
 CONFIG_PACKAGE_kmod-sched-core=y
 # CONFIG_PACKAGE_kmod-shortcut-fe is not set
@@ -71,6 +78,7 @@ CONFIG_PACKAGE_libffi=y
 # CONFIG_PACKAGE_libmbedtls is not set
 CONFIG_PACKAGE_libnetsnmp=y
 # CONFIG_PACKAGE_libnettle is not set
+CONFIG_PACKAGE_libnftnl=y
 CONFIG_PACKAGE_libparted=y
 # CONFIG_PACKAGE_libpcre2 is not set
 # CONFIG_PACKAGE_libpopt is not set
@@ -80,6 +88,7 @@ CONFIG_PACKAGE_libruby=y
 CONFIG_PACKAGE_libstdcpp=y
 # CONFIG_PACKAGE_libtasn1 is not set
 # CONFIG_PACKAGE_libtirpc is not set
+CONFIG_PACKAGE_libucode=y
 # CONFIG_PACKAGE_libudns is not set
 # CONFIG_PACKAGE_liburing is not set
 CONFIG_PACKAGE_libyaml=y
@@ -122,6 +131,7 @@ CONFIG_PACKAGE_luci-proto-ipv6=y
 # CONFIG_PACKAGE_microsocks is not set
 # CONFIG_PACKAGE_mosdns is not set
 CONFIG_PACKAGE_natter=y
+CONFIG_PACKAGE_nftables-json=y
 CONFIG_PACKAGE_odhcp6c=y
 CONFIG_PACKAGE_odhcp6c_ext_cer_id=0
 CONFIG_PACKAGE_odhcpd-ipv6only=y
@@ -155,12 +165,27 @@ CONFIG_PACKAGE_ruby-yaml=y
 CONFIG_PACKAGE_smartmontools=y
 CONFIG_PACKAGE_snmpd=y
 CONFIG_PACKAGE_sqm-scripts=y
+CONFIG_PACKAGE_sqm-scripts-extra=y
 CONFIG_PACKAGE_tc-tiny=y
 # CONFIG_PACKAGE_tcping is not set
+CONFIG_PACKAGE_ucode=y
+CONFIG_PACKAGE_ucode-mod-fs=y
+CONFIG_PACKAGE_ucode-mod-ubus=y
+CONFIG_PACKAGE_ucode-mod-uci=y
 CONFIG_PACKAGE_unzip=y
 # CONFIG_PACKAGE_vlmcsd is not set
 # CONFIG_PACKAGE_vsftpd-alt is not set
 # CONFIG_PACKAGE_wsdd2 is not set
 # CONFIG_PACKAGE_xray-core is not set
 CONFIG_PARTED_READLINE=y
-CONFIG_TARGET_ROOTFS_PARTSIZE=600
+CONFIG_TARGET_EXT4_BLOCKSIZE=4096
+CONFIG_TARGET_EXT4_BLOCKSIZE_4K=y
+CONFIG_TARGET_EXT4_RESERVED_PCT=0
+CONFIG_TARGET_KERNEL_PARTSIZE=200
+CONFIG_TARGET_ROOTFS_EXT4FS=y
+CONFIG_TARGET_ROOTFS_PARTSIZE=6000
+# CONFIG_TARGET_ROOTFS_SQUASHFS is not set
+CONFIG_USE_GC_SECTIONS=y
+CONFIG_USE_LTO=y
+# CONFIG_VMDK_IMAGES is not set
+# CONFIG_PACKAGE_kmod-nft-tproxy is not set
